@@ -32,7 +32,7 @@ function App() {
   const onDeleteBtnClick = useCallback(
     (id) => {
       setTodoList(prevState => prevState.filter(function(todo){
-        if (todo.id != id) {
+        if (todo.id !== id) {
           return todo
         }
       }))
